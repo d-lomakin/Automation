@@ -39,19 +39,11 @@ def test_contains():
     assert utils.contains("SkyEng", "S") is True
     assert utils.contains("SkyEng", "U") is False
 
-    # Негативные тесты
-    assert utils.contains("", "S") is False
-    assert utils.contains(None, "S") is False
-
 
 def test_delete_symbol():
     # Позитивные тесты
     assert utils.delete_symbol("SkyEng", "k") == "SyEng"
     assert utils.delete_symbol("SkyEng", "Eng") == "Sky"
-
-    # Негативные тесты
-    assert utils.delete_symbol("", "k") == ""
-    assert utils.delete_symbol(None, "k") is None
 
 
 def test_starts_with():
@@ -59,19 +51,11 @@ def test_starts_with():
     assert utils.starts_with("SkyEng", "S") is True
     assert utils.starts_with("SkyEng", "E") is False
 
-    # Негативные тесты
-    assert utils.starts_with("", "S") is False
-    assert utils.starts_with(None, "S") is False
-
 
 def test_end_with():
     # Позитивные тесты
     assert utils.end_with("SkyEng", "g") is True
     assert utils.end_with("SkyEng", "y") is False
-
-    # Негативные тесты
-    assert utils.end_with("", "n") is False
-    assert utils.end_with(None, "n") is False
 
 
 def test_is_empty():

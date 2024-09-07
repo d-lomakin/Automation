@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-import time
+from selenium.webdriver.common.keys import Keys
 
 
 service = Service(
@@ -12,15 +12,14 @@ driver = webdriver.Chrome(service=service)
 
 try:
 
-    driver.get("http://uitestingplayground.com/classattr")
+    driver.get("https://www.google.com/")
 
-    button = driver.find_element(By.CLASS_NAME, 'btn-primary')
-    button.click()
+    search_box = driver.find_element(By.NAME, "q")
 
-    alert = driver.switch_to.alert
-    alert.accept()
+    search_box.send_keys("Selenium")
 
-    time.sleep(10)
+    search_box.send_keys(Keys.RETURN)
 
 finally:
+
     driver.quit()

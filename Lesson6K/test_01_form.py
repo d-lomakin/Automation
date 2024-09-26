@@ -8,7 +8,7 @@ import time
 
 
 chrome_options = Options()
-# замените на путь к вашему chromedriver
+
 chrome_service = Service(
     r'C:\Users\adm\.cache\selenium\chromedriver\win64\128.0.6613.119\chromedriver.exe')
 

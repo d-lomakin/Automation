@@ -1,0 +1,10 @@
+Checking highlight for field: zip-code
+Checking highlight for field: first-name
+Checking highlight for field: last-name
+Checking highlight for field: address
+Checking highlight for field: city
+Checking highlight for field: country
+Checking highlight for field: e-mail
+Checking highlight for field: phone
+Checking highlight for field: job-position
+Checking highlight for field: company
